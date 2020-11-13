@@ -1,0 +1,23 @@
+{
+  "name": "Dark-them",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss build assets/vendors/tailwindcss/src/main.css -o assets/vendors/tailwindcss/dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MezianeKhalil/Dark-them.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MezianeKhalil/Dark-them/issues"
+  },
+  "homepage": "https://github.com/MezianeKhalil/Dark-them#readme",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  }
+}

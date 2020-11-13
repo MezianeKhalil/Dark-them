@@ -1,0 +1,81 @@
+<!-- 
+  template name : dark theme
+  version       : 1.0
+  author        : khalil meziane
+  contact       : kahlilmez2000@gmail.com
+  created       : 13/11/2020
+  file name     : index.html
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <!-- meta -->
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="description" content="dark theme example" />
+     <meta name="author" content="khalil meziane" />
+     <meta name="theme-color" content="#ffffff" />
+     <meta name="keywords" content="dark theme,web,front-end" />
+     <!-- style sheet -->
+     <link rel="stylesheet" href="../assets/vendors/tailwindcss/dist/style.css">
+     <!-- fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+     <!-- title -->
+     <title>Dark theme</title>
+ </head>
+ <body class="font-Poppins">
+    <header class="h-screen flex justify-items-center items-center px-8">
+        <div class="container mx-auto text-center">
+          <h1 class="text-6xl text-gray-900 font-extrabold mb-4 capitalize">blog details</h1>
+          <p class="text-gray-900 w-full lg:w-1/2 font-medium mx-auto text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quaerat error voluptate aliquid inventore aliquam.</p>
+        </div>
+    </header>
+    <main>
+      <section class="py-12">
+        <div class="container mx-auto">
+          <img class="" src="../assets/libs/images/udemy.jpg" alt="web design">
+          <article class="px-8 md:px-24 lg:px-48 pt-10 pb-1">
+            <header>
+              <div class="flex flex-wrap -mx-1 overflow-hidden w-full lg:w-4/6 text-sm text-gray-900">
+                <div class="my-1 px-1 w-1/2 overflow-hidden">
+                  <p>by <a href="#" class="capitalize font-semibold underline">meziane khalil</a></p>
+                </div>
+                <div class="my-1 px-1 w-1/2 overflow-hidden flex">
+                  <i class="mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 1c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm-12 2c0 .552-.447 1-1 1s-1-.448-1-1v-2c0-.552.447-1 1-1s1 .448 1 1v2zm13 5v10h-16v-10h16zm2-6h-2v1c0 1.103-.897 2-2 2s-2-.897-2-2v-1h-8v1c0 1.103-.897 2-2 2s-2-.897-2-2v-1h-2v18h20v-18zm4 3v19h-22v-2h20v-17h2zm-17 7h-2v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4h-2v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+                  </i>
+                  <time datetime="2020-11-13 15:00" class="font-medium">13 november, 2020</time>
+                </div>
+              </div>
+              <h1 class="text-2xl md:text-3xl text-gray-900 font-extrabold mt-3">Choose the Best JavaScript Framework for Your Server-Side Development</h1>
+            </header>
+            <div>
+              <p class="text-gray-900 mt-5 leading-9 font-medium text-base lg:text-lg" style="text-indent: 15px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci vitae optio, eos quia laudantium exercitationem ratione maxime nobis accusantium commodi dolorem iure aliquam ipsum! Voluptates, amet! Recusandae dolores, dolor quo nulla incidunt ratione consequuntur ex. Sed quae omnis facere, excepturi tenetur nostrum. Voluptatum sed quod similique, excepturi sapiente tenetur, dignissimos neque eius aperiam corrupti optio officiis explicabo ab! Fuga voluptates quisquam magnam voluptatibus, non distinctio? Hic non exercitationem earum, explicabo pariatur eaque aut voluptate nisi perspiciatis molestiae quidem quia, repellat nobis saepe sed, aspernatur cumque accusamus eveniet expedita assumenda veritatis neque nam necessitatibus quisquam! Corporis libero saepe aliquam excepturi, expedita voluptates asperiores ab harum dolor consequuntur culpa quod iusto ducimus vitae. Eligendi quas ab mollitia blanditiis culpa? Fuga animi quas explicabo cum ad recusandae hic mollitia nobis quia, minus enim veniam at fugiat laborum tenetur veritatis facere reprehenderit. Vel praesentium quas id cupiditate earum odit!</p>
+              <p class="text-gray-900 mt-5 leading-9 font-medium text-base lg:text-lg" style="text-indent: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, commodi velit qui mollitia consequatur reiciendis, maxime doloremque suscipit placeat nihil libero a voluptate porro cupiditate vitae? Consectetur quae quo earum, tempore nemo at similique in facilis, harum veritatis tenetur vero eveniet consequuntur cum, quis sed!</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="px-8 md:px-24 lg:px-48">
+      <div class="container mx-auto">
+          <hr>
+          <p class="text-center text-gray-900 font-medium text-lg py-5">&copy; 2020. All rights reserved.</p>
+      </div>
+    </footer>
+    <div class="flex justify-center items-center" x-data="{toggle:localStorage.getItem('darkMode')}" style="position: fixed;bottom: 20px;right: 20px;">
+      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+      <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+           :class="[toggle === '1' ? 'bg-white' : 'bg-gray-800']">
+        <label for="toggle"
+               class="absolute left-0 bg-white border-2 border-gray-400 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+               :class="[toggle === '1' ? 'translate-x-full bg-white' : 'translate-x-0 border-gray-900']"></label>
+        <input type="checkbox" id="toggle" name="toggle"
+               class="appearance-none w-full h-full active:outline-none focus:outline-none"
+               @click="toggle === '0' ? toggle = '1' : toggle = '0'"/>
+      </div>
+    </div>
+    <hr class="bg-black text-gray-200  border-gray-900 hidden">
+    <script src="../assets/libs/scripts/app.js"></script>
+ </body>
+ </html>
